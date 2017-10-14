@@ -2,10 +2,12 @@ import sqlite3
 
 
 def access():
-    conn = sqlite3.connect(puppylab.db);
-    cur = conn.cursor()
-    cur.execute("SELECT Type from EmployersID")
+    connector = sqlite3.connect("puppylab.db")
+    cur = connector.cursor()
+    cur.execute("SELECT Type FROM EmployersID")
     rows = cur.fetchall()
- 
-    for row in rows:
-        print(row)
+    print(rows)
+
+access()
+
+
