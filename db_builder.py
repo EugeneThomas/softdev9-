@@ -31,7 +31,7 @@ for row in d2:
     name = row['code']
     age = row['mark']
     Id = row['id']
-    command = "INSERT INTO STUDENTS VALUES('" + name + "', " + age + ", " + Id + ")"
+    command = "INSERT INTO COURSES VALUES('" + name + "', " + age + ", " + Id + ")"
     c.execute(command) #run SQL statement
 #==========================================================
 db.commit() #save changes
